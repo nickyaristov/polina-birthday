@@ -51,10 +51,12 @@
   </style>
 </head>
 <body>
-  <h1>Полинкова, с днём рождения тебя! 🎉</h1>
+  <h1 id="main-title">Полинкова, с днём рождения тебя! 🎉</h1>
   <button onclick="revealGift(this)">ЖМИ СЮДА</button>
   <div id="gift">
-    <p>Тебя ждут <strong>17 подарочных карт</strong> из Золотого Яблока:</p>
+    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎉🎈 <span style="border: 2px solid #ff69b4; border-radius: 50%; padding: 0.4rem 0.8rem; margin: 0 0.3rem; background: white;">1</span><span style="border: 2px solid #ff69b4; border-radius: 50%; padding: 0.4rem 0.8rem; margin: 0 0.3rem; background: white;">1</span> 🎁✨</div>
+    <p>В России тебя ждут <strong>17 подарочных карт</strong> из Золотого Яблока!!! 🎀💝</p>
+    <p style="font-size: 1.4rem; margin-top: 1.5rem;"><strong>17 подарочных карт:</strong></p>
     <ul style="list-style:none; padding-left:0">
       <li>— 3 по 1000 ₽</li>
       <li>— 14 по 500 ₽</li>
@@ -68,6 +70,7 @@
     function revealGift(button) {
   document.getElementById('gift').style.display = 'block';
   button.style.display = 'none';
+  document.getElementById('main-title').style.display = 'none';
 }
   </script>
 </body>
